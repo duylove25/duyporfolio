@@ -202,7 +202,7 @@ header{
     max-width: 400px;
     position: absolute;
     text-align: right;
-    top: 0;
+    top: 30;
     right: 0;
     z-index: -1;
     width: 350px;
@@ -414,6 +414,78 @@ header{
         margin-top: 0;
     }
 }
+
+/* Skill */
+#skill{
+    padding-top: 10em;
+    position: relative;
+    overflow-x: hidden ;
+}
+
+#skill h2{
+    text-align: center;
+    color: var(--gray);
+}
+
+.skill_deco{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-60%);
+    z-index: -1;
+}
+
+.skill_deco:nth-child(2){
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    bottom: 15%;
+    right: 0;
+    transform: translateX(60%);
+    z-index: -1;
+}
+
+.skill_img_single{
+    margin: 2em 0;
+
+}
+.skill_img_single:nth-child(odd){
+    padding-top: 5em;
+}
+
+.skill_img_single:nth-child(3){
+    margin-top: -5em;
+}
+
+.skill_btn{
+    text-align: center;
+    margin-top: 8em;
+
+}
+
+.skill_btn button{
+    font-size: 1rem;
+}
+
+@media (min-width: 62em)
+{
+    #skill h2{
+        margin-top: 3em;
+    }
+    .skill_img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill_img_single{
+        margin: 0 5em;
+        width: 35%;
+    }
+    .skill_img_single:nth-child(3){
+        margin-top: 0;
+    }
+}
+
 
 /* footer */
 #footer{
