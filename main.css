@@ -499,8 +499,9 @@ header{
 
 
 .footer_img{
-    max-width: 800px;
-    position: absolute;
+    border-radius: 20%;
+    max-width: 600px;
+    position:initial;
     top: 0;
     right: 0;
     transform: translateX(25%);
